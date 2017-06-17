@@ -1,0 +1,115 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../paper-ripple/paper-ripple.html">
+<link rel="import" href="social-icons.html">
+
+<dom-module id="smd-social">
+  <template>
+    <style>
+      :host {
+        display: inline;
+      }
+      #wrapper{
+        display:flex;
+        flex-flow:wrap row;
+        justify-content:center;
+        align-items:center;
+
+      }
+    </style>
+   <div id="wrapper" style$="background:[[iconBg]];width:calc([[width]]px / 2 + 20px + [[width]]px); height:calc([[height]]px / 2 + 20px + [[height]]px); position:relative; border-radius:50%;">
+<a href="[[link]]" target="[[target]]"><iron-icon icon="social-icons:[[icon]]" style$=" --iron-icon-height: [[height]]px;--iron-icon-width: [[width]]px;--iron-icon-fill-color:[[fillColor]];--iron-icon-stroke-color:[[strokeColor]]"></iron-icon></a>
+<paper-ripple ></paper-ripple>
+</div>
+  </template>
+
+  <script>
+    /**
+     * `smd-social`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class SmdSocial extends Polymer.Element {
+      static get is() { return 'smd-social'; }
+      static get properties() {
+        return {
+          icon: {
+            type: String,
+            value: "facebook"
+          },
+          height: {
+            type: String,
+            value: '40'
+          },
+           width: {
+            type: String,
+            value: '40'
+          },
+           fillColor: {
+            type: String,
+            value: '#fff'
+          },
+           strokeColor: {
+            type: String,
+            value: ''
+          },
+            logoColor:Boolean,
+            logoCircle:Boolean,
+            iconBg: String,
+            link: String,
+            target:{
+              value:'_blank',
+              type: String
+            }
+        };
+      }
+      connectedCallback(){
+        super.connectedCallback();
+        if(this.logoColor == true){
+        if(this.icon == 'google-plus'){
+          this.fillColor = "#d34836"
+        }else if(this.icon == 'facebook'){
+           this.fillColor = "#3b5998"
+        }else if(this.icon == 'twitter'){
+           this.fillColor = "#4099FF"
+        }else if(this.icon == 'youtube'){
+           this.fillColor = "#bb0000"
+        }else if(this.icon == 'dribbble'){
+           this.fillColor = "#ea4c89"
+        }else if(this.icon == 'linkedin'){
+           this.fillColor = "#0077B5"
+        }else if(this.icon == 'pinterest'){
+           this.fillColor = "#C92228"
+        }else if(this.icon == 'behance'){
+           this.fillColor = "#053eff"
+        }
+       }
+       if(this.logoCircle == true){
+        if(this.icon == 'google-plus'){
+          this.iconBg = "#d34836"
+        }else if(this.icon == 'facebook'){
+           this.iconBg = "#3b5998"
+        }else if(this.icon == 'twitter'){
+           this.iconBg = "#4099FF"
+        }else if(this.icon == 'youtube'){
+           this.iconBg = "#bb0000"
+        }else if(this.icon == 'dribbble'){
+           this.iconBg = "#ea4c89"
+        }else if(this.icon == 'linkedin'){
+           this.iconBg = "#0077B5"
+        }else if(this.icon == 'pinterest'){
+           this.iconBg = "#C92228"
+        }else if(this.icon == 'behance'){
+           this.iconBg = "#053eff"
+        }
+       }
+      }
+    }
+
+    window.customElements.define(SmdSocial.is, SmdSocial);
+  </script>
+</dom-module>
