@@ -1,46 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>smd-social demo</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <title>smd-social demo</title>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../smd-social.html">
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-      </style>
-    </custom-style>
-  </head>
-  <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic smd-social demo</h3>
-      <demo-snippet>
-        <template>
-          <smd-social  width="30" height="30"logo-circle icon="google-plus"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="facebook"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="twitter"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="youtube"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="dribbble"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="linkedin"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="pinterest"></smd-social>
-          <smd-social logo-circle width="30" height="30" icon="behance"></smd-social>
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../smd-social.html">
 
-          <smd-social  width="30" height="30"logo-color icon="google-plus"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="facebook"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="twitter"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="youtube"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="dribbble"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="linkedin"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="pinterest"></smd-social>
-          <smd-social logo-color width="30" height="30" icon="behance"></smd-social>
-        </template>
-      </demo-snippet>
-    </div>
-  </body>
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .wrap {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
+      }
+    </style>
+  </custom-style>
+</head>
+
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic smd-social demo</h3>
+    <h4>Install: bower i --save Soulmatters/smd-social</h4>
+    <demo-snippet>
+      <template>
+        <div class="wrap">
+          <div class="wrapper">
+            <smd-social width="30" height="30" logo-circle icon="google-plus"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="facebook"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="twitter"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="youtube"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="dribbble"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="linkedin"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="pinterest"></smd-social>
+            <smd-social logo-circle width="30" height="30" icon="behance"></smd-social>
+          </div>
+          <div class="wrapper">
+            <smd-social width="30" height="30" logo-color icon="google-plus"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="facebook"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="twitter"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="youtube"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="dribbble"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="linkedin"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="pinterest"></smd-social>
+            <smd-social logo-color width="30" height="30" icon="behance"></smd-social>
+          </div>
+           <div class="wrapper">
+            <smd-social width="30" height="30" fill-color="#212121" icon="google-plus"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="facebook"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="twitter"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="youtube"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="dribbble"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="linkedin"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="pinterest"></smd-social>
+            <smd-social fill-color="#212121" width="30" height="30" icon="behance"></smd-social>
+          </div>
+              <div class="wrapper">
+            <smd-social width="30" height="30" icon-bg="#212121" icon="google-plus"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="facebook"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="twitter"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="youtube"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="dribbble"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="linkedin"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="pinterest"></smd-social>
+            <smd-social icon-bg="#212121" width="30" height="30" icon="behance"></smd-social>
+          </div>
+        </div>
+        
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+
 </html>
