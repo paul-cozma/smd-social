@@ -16,16 +16,16 @@ $ bower i --save Soulmatters/smd-social
 ```
 ## Element properties
 
-```
-icon: the name of the social media (Google+, facebook, twitter, dribbble, linkedin, behance, youtube, pinterest),
-fillColor: the color fill of the social icon,
-width,height: the size of the icon
-logoColor: Boolean if set to true uses the original color of the social media as icon color,
-logoCircle: Boolean if set to true uses the original color of the social media as icon background,
-iconBg: String for the custom color of the icon background,
-link: String the set the link of the icon,
-target: String, default '_blank'
-```
+
+**icon**: the name of the social media (Google+, facebook, twitter, dribbble, linkedin, behance, youtube, pinterest),
+**fillColor**: the color fill of the social icon,
+**width,height**: the size of the icon
+**logoColor**: Boolean if set to true uses the original color of the social media as icon color,
+**logoCircle**: Boolean if set to true uses the original color of the social media as icon background,
+**iconBg**: String for the custom color of the icon background,
+**link**: String the set the link of the icon,
+**target**: String, default '_blank'
+
 
 ## Install the Polymer-CLI
 
