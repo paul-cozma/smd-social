@@ -54,5 +54,7 @@ $ bower i --save Soulmatters/smd-social
 **link**: String the set the link of the icon,<br>
 **target**: String, default '_blank'.<br>
 
+###Update
 
+Fixed element ripple overflow
 
