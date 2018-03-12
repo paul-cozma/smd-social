@@ -17,8 +17,11 @@
         align-items:center;
 
       }
+      .wrapper{
+        position: relative;
+      }
     </style>
-   <div id="wrapper" style$="background:[[iconBg]];border-radius:50%;width:calc([[width]]px / 2 + 20px + [[width]]px); height:calc([[height]]px / 2 + 20px + [[height]]px);">
+   <div id="wrapper" style$=" position:relative;background:[[iconBg]];border-radius:50%;width:calc([[width]]px / 2 + 20px + [[width]]px); height:calc([[height]]px / 2 + 20px + [[height]]px);">
 <a href="[[link]]" target="[[target]]" style$=" width:calc([[width]]px / 2 + 20px + [[width]]px); height:calc([[height]]px / 2 + 20px + [[height]]px);"><iron-icon icon="social-icons:[[icon]]" style$=" --iron-icon-height: [[height]]px;--iron-icon-width: [[width]]px;--iron-icon-fill-color:[[fillColor]];--iron-icon-stroke-color:[[strokeColor]];"></iron-icon></a>
 <paper-ripple ></paper-ripple>
 </div>
